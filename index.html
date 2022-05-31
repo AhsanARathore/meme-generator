@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meme Generator</title>
+
+    <style>
+      body {
+
+        background-color: gray;
+      }
+      
+      h1 {
+        text-align: center;
+        background-color: hotpink;
+        margin: 0;
+      }
+
+     P {
+        text-align: center;
+
+     }
+
+     input {
+
+        text-align: center;
+        width: 50%;
+     }
+
+     #submitmeme {
+    
+        text-align: center;
+        width: 100%;
+
+     }
+
+      #memeform {
+
+        background-color: blanchedalmond;
+    
+
+      }
+
+      .picture {
+        position: relative;
+        width: max-content;
+        text-align: center;
+        
+    
+      }
+
+     .image {
+        position: relative;
+        width: 400px;
+        height: 400px;
+        text-align: center;
+       
+
+
+     }
+
+      
+
+      .top {
+        position: absolute;
+        margin: 10px;
+        position:absolute;
+        text-align:center;
+        top: 0;
+        width: 100%;
+        font-size: 30px;
+        font-weight: bold;
+        
+      }
+
+      .bottom {
+        position: absolute;
+        bottom: 0;
+        margin: 10px;
+        text-align:center;
+        width: 100%;
+        font-size: 30px;
+        font-weight: bold;
+       
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Build Your Own Memes!</h1>
+
+    <form action="" id="memeform">
+      <p>
+        <label>IMG URL:  </label> <br>
+        <input type="text" placeholder="Paste Image URL Here" id="imgurl" />
+      </p>
+
+      <p>
+        <label>  Top Text:</label> <br>
+        <input type="text" 
+        placeholder="Write Top Text Here" 
+        id="toptext" />
+      </p>
+
+      <p>
+        <label>Bottom Text:</label> <br>
+        <input
+          type="text"
+          placeholder="Write Bottom Text Here"
+          id="bottomtext"
+        />
+      </p>
+      <p>
+          <label for="">Text color:</label> <br>
+        <input type="color" id="color"></input>
+    </p>
+
+      <input type="submit" value="Create Meme Now" id="submitmeme" />
+    </form>
+
+
+    <script src="memeGenerator.js"></script>
+  </body>
+</html>
